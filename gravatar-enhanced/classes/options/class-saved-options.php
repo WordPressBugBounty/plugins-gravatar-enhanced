@@ -9,14 +9,14 @@ use Automattic\Gravatar\GravatarEnhanced\Email;
 use Automattic\Gravatar\GravatarEnhanced\Comments;
 
 /**
- * @psalm-import-type AvatarOptionsArray from Avatar\Options
- * @psalm-import-type ProxyOptionsArray from Proxy\Options
- * @psalm-import-type AnalyticsOptionsArray from Analytics\Options
- * @psalm-import-type EmailOptionsArray from Email\Options
- * @psalm-import-type CommentsOptionsArray from Comments\Options
- * @psalm-type Preferences Comments\Preferences | Avatar\Preferences | Proxy\Preferences | Email\Preferences | Analytics\Preferences
+ * @phpstan-import-type AvatarOptionsArray from Avatar\Options
+ * @phpstan-import-type ProxyOptionsArray from Proxy\Options
+ * @phpstan-import-type AnalyticsOptionsArray from Analytics\Options
+ * @phpstan-import-type EmailOptionsArray from Email\Options
+ * @phpstan-import-type CommentsOptionsArray from Comments\Options
+ * @phpstan-type Preferences Comments\Preferences | Avatar\Preferences | Proxy\Preferences | Email\Preferences | Analytics\Preferences
  *
- * @psalm-type OptionsArray = array{
+ * @phpstan-type OptionsArray = array{
  *   avatar?: AvatarOptionsArray,
  *   proxy?: ProxyOptionsArray,
  *   analytics?: AnalyticsOptionsArray,

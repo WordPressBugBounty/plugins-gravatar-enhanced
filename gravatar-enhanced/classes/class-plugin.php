@@ -138,6 +138,7 @@ class Plugin {
 			'oembed' => $this->oembed,
 			'comments' => $this->comments,
 		];
+
 		$modules_whitelist = apply_filters( 'gravatar_enhanced_modules_whitelist', null );
 		if ( is_array( $modules_whitelist ) ) {
 			$this->modules = array_intersect_key( $this->modules, array_flip( $modules_whitelist ) );

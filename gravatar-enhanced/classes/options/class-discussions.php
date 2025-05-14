@@ -13,7 +13,7 @@ require_once __DIR__ . '/class-saved-options.php';
 require_once __DIR__ . '/class-migrate.php';
 
 /**
- * @psalm-import-type ProxyOptionsType from Proxy\Options
+ * @phpstan-import-type ProxyOptionsType from Proxy\Options
  */
 class DiscussionsPage {
 	/**
@@ -105,7 +105,7 @@ class DiscussionsPage {
 				'discussion',
 				'avatars'
 			);
-	}
+		}
 	}
 
 	/**
@@ -291,7 +291,7 @@ class DiscussionsPage {
 		}
 
 		// Handle auto options.
-		if ( in_array('avatar', $this->enabled_modules, true) ) {
+		if ( in_array( 'avatar', $this->enabled_modules, true ) ) {
 			$avatar_preferences = $this->get_avatar_preferences();
 			$this->auto_options->update( $avatar_preferences );
 		}
@@ -318,6 +318,7 @@ class DiscussionsPage {
 			$email_preferences = $this->get_email_preferences();
 			$this->lazy_options->update( $email_preferences );
 		}
+
 		$this->lazy_options->save();
 	}
 
