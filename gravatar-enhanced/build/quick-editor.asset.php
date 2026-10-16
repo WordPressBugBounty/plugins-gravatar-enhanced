@@ -1,4 +1,9 @@
 <?php
 
 // phpcs:ignore
-return array('dependencies' => array(), 'version' => 'cc10d94ed35f5a5f280c');
+return array(
+	'dependencies' => array(
+		
+	),
+	'version' => 'd6a68351de5e28781359'
+);
